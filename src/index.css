@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #0a192f;
+}
+
+::selection {
+  background-color: #00ff00;
+  color: #0a192f;
+}
+
+/* Smooth scroll for Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
